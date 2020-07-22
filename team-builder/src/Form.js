@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./App.css";
+
 export default function Form(props) {
   const { values, update, submit } = props;
 
@@ -53,7 +55,6 @@ export default function Form(props) {
           </select>
         </label>
         <div className="form-group submit">
-          <h2>Add a Team Member </h2>
           <button disabled={!values.name || !values.email || !values.role}>
             Submit
           </button>

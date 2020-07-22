@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Team Builder List</h1>
+      <h1>Add A Team Member </h1>
       <Form values={formValues} update={updateList} submit={submitForm} />
       {teams.map((team) => {
         return <Team key={teams.id} details={team} />;
